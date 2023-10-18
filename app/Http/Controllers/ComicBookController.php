@@ -15,7 +15,8 @@ class ComicBookController extends Controller
      */
     public function index()
     {
-        //
+        $title = 'Comics';
+        return view('comics', compact('title')); 
     }
 
     /**
