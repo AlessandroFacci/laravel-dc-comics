@@ -9,3 +9,4 @@ class ComicBook extends Model
 {
     use HasFactory;
 }
+     
