@@ -11,7 +11,7 @@
   @vite('resources/js/app.js')
 </head>
 
-<body>
+<body data-bs-theme="dark">
   @include('partials._navbar')
 
   <main>
