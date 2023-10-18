@@ -18,7 +18,7 @@ class ComicBooksTableSeeder extends Seeder
 
         $_comics = config("db");
 
-        foreach ($_comics as $key =>  $_comic) {
+        foreach ($_comics as $_comic) {
 
             $comic_book = new ComicBook();
     
@@ -29,6 +29,7 @@ class ComicBooksTableSeeder extends Seeder
             $comic_book->series = $_comic["series"];
             $comic_book->sale_date = $_comic["sale_date"];
             $comic_book->type = $_comic["type"];
+
             
             $comic_book->save();
         }
