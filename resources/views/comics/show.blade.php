@@ -2,6 +2,10 @@
 
 @section('main-content')
 <div class="container my-5 ">
+
+  <a href="{{route('comics.index')}}" class="btn btn-success mb-4">List</a>
+  <a href="{{route('comics.edit', $comic)}}" class="btn btn-warning mb-4">Edit</a>
+
   <div class="row g-3">
 
     <h1 class="text-white">{{$comic->title}}</h1>
