@@ -44,6 +44,6 @@
       </tbody>
       
     </table>
-    @dump($comics)
+    
   </section>
 @endsection
