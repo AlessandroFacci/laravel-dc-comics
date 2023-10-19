@@ -5,9 +5,14 @@
 @endsection
 
 @section('main-content')
-  <section class="container mt-5">
-    <h1 class="text-white">{{ $title }}</h1>
+  <section class="container my-5">
+
+    <a href="{{route('comics.create')}}" class="btn btn-success mb-4">Create new comic</a>
+
+    <h1 class="text-white mb-3">{{ $title }}</h1> 
+
     <table class="table table-striped">
+
       <thead>
         <tr>
           <th scope="col">Id</th>
@@ -19,6 +24,7 @@
           <th scope="col"></th>
         </tr>
       </thead>
+
       <tbody>
        @foreach ($comics as $comic)
        <tr>
@@ -36,6 +42,7 @@
        </tr>
        @endforeach
       </tbody>
+      
     </table>
     @dump($comics)
   </section>
