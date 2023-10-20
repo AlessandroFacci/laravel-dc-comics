@@ -47,7 +47,7 @@
 
       <div class="col-12">
         <label for="description" class="form-label">Description</label>
-        <textarea id="description" name="description" class="form-control" value="{{$comic->description}}"></textarea>
+        <textarea id="description" name="description" class="form-control">{{$comic->description}}</textarea>
       </div>
 
       <div class="col-12">
